@@ -4,7 +4,7 @@ import Screen2 from './componets/page2/Screen2'
 
 const App = () => {
   return (
-    <div >
+    <div id="right"  >
       <Screen1/>
       <Screen2/>
     </div>

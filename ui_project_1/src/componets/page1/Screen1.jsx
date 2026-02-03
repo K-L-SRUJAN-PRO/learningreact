@@ -5,7 +5,7 @@ import Content1 from './Content1'
 
 const Screen1 = () => {
   return (
-    <div className='h-screen w-full wrap-break-word '>
+    <div id='right' className='h-screen w-full wrap-break-word '>
         <Navbar/>
         <Content1/>
         

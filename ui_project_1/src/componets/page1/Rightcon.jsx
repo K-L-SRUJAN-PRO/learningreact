@@ -21,6 +21,11 @@ const Rightcon = () => {
       im: "https://plus.unsplash.com/premium_photo-1675626492183-865d6d8e2e8a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
       it: "Prime customers.that have access to bank credit and are satisfied with the current product",
       tb: "Satisfied"
+    },
+    {
+      im: "https://plus.unsplash.com/premium_photo-1675626492183-865d6d8e2e8a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
+      it: "Prime customers.that have access to bank credit and are satisfied with the current product",
+      tb: "Satisfied"
     }
   ]
   return (
