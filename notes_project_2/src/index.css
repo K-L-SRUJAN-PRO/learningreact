@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* input{
+    height: 400px;
+    width: 400px;
+} */
+
+form h1{
+      -webkit-text-stroke: 2px black;
+}
