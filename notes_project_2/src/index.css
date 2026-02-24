@@ -4,7 +4,16 @@
     height: 400px;
     width: 400px;
 } */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 form h1{
       -webkit-text-stroke: 2px black;
 }
+
