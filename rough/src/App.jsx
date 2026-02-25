@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import axios from 'axios'
+import { useEffect } from 'react'
 
 
 // const App = () => {
@@ -71,36 +73,123 @@ import { useState } from 'react'
 
 // export default App
 
-//interacting with input field via DOM
+//interacting with input field via DOM----------------------------------------------------------------------------------------------------
 
 // import React from 'react'
 
-const App = () => {
-  const btn = (e)=>{
-    e.preventDefault()
-    // console.log("from submited");
+
+// const App = () => {
+//   const btn = (e)=>{
+//     e.preventDefault()
+//     // console.log("from submited");
+
+//   }
+//   const [Text, setText] = useState('')
+//   return (
+//     <div>
+//       <form onSubmit={(e)=>{
+//         btn(e)
+//         console.log("form subitted by ",Text)
+//       }}>
+//         <input 
+//         type="text" 
+//         placeholder='Enter yout text' 
+//         value={Text} 
+//         onChange={(e)=>{
+//           setText(e.target.value)
+//           console.log(e.target.value)
+//         }}
+//           />
+//         <button >Submit</button>
+//       </form>
+//     </div>
+//   )
+// }
+
+// localStorage---------------------------------------------------------------------------------------------------------------------------------
+
+// const App = () => {
+//   console.log(localStorage.getItem('u'))
+//   localStorage.removeItem('age')
+//   return (
+//     <>
+
+//       <div>App</div>
+
+//     </>
+//   )
+// }
+
+// gettign response using fecth---------------------------------------------------------------------------------------------------------------------
+
+
+// const App = () => {
+
+//   async function getdata() {
+//     var a = await fetch('https://jsonplaceholder.typicode.com/todos')
+//     var data= await a.json()
+//     console.log(data)
+//   }
+//   return (
+//    <>
+//     <button onClick={()=>{getdata()}}>get data</button>
+//    </>
+//   )
+// }
+
+// api respose access using axios-------------------------------------------------------------------------------------------------------------------
+
+
+// export const App = () => {
+
+//   const getres=async()=>{
+//     var a = await axios.get('https://jsonplaceholder.typicode.com/todos/1')
+//     console.log(a)
+//   }
+
+//   return (
+//     <div>
+//       <button onClick={getres}>get response</button>
+//     </div>
+//   )
+// }
+
+
+
+export const App = () => {
+
+  const [a, seta] = useState(0)
+  const [b, setb] = useState(0)
+
+  function onChangeA(){
+    console.log("value of a is changed");
     
   }
-  const [Text, setText] = useState('')
+  function onChangeB(){
+    console.log("value of B is changed");
+    
+  }
+  
+  useEffect(()=>{
+    onChangeA()
+  },[a])
+  useEffect(()=>{
+    onChangeB()
+  },[b])
+
+
   return (
     <div>
-      <form onSubmit={(e)=>{
-        btn(e)
-        console.log("form subitted by ",Text)
-      }}>
-        <input 
-        type="text" 
-        placeholder='Enter yout text' 
-        value={Text} 
-        onChange={(e)=>{
-          setText(e.target.value)
-          console.log(e.target.value)
-        }}
-          />
-        <button >Submit</button>
-      </form>
+      <h1>value of A :{a}</h1>
+      <h1>value of B :{b}</h1>
+      <button onClick={()=>{seta(a+1)}}>change A</button>
+      <button onClick={()=>{setb(b+1)}}>change B</button>
     </div>
   )
 }
 
+
+
+
 export default App
+
