@@ -1,8 +1,19 @@
 import React from 'react'
+import { createContext } from 'react'
+import { useContext } from 'react'
+import { useState } from 'react'
+import './App.css'
 
-const Themecon = () => {
+export let themes= createContext();
+
+const Themecon = (t) => {
+  const [theme, settheme] = useState('light')
+
   return (
-    <div>Themecon</div>
+    <themes.Provider value={[theme,settheme]}>
+      {t.children}
+    </themes.Provider>
+
   )
 }
 

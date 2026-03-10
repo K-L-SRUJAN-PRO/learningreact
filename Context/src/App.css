@@ -1,0 +1,28 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.dark {
+    background-color: #140b07;
+    color: aliceblue;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+.light {
+    background-color: #422f27;
+    color: aliceblue;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.h1 {
+    font-size: 90px;
+    color: hotpink;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /* display: flex;
+    justify-content: center; */
+}
