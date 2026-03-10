@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { themes } from '../Themecon'
 
 const Nav = () => {
+  const {ntheme}=useContext(themes)
   return (
-    <div className='flex justify-between px-10 py-4 bg-cyan-400'>
-      <div className='font-bold text-xl text-black'>
+    <div className={ntheme}>
+      <div className='font-bold text-xl '>
         <h2>Product store</h2>
       </div>
-      <div className='flex gap-6 text-black underline'>
+      <div className='flex gap-6  underline'>
         <Link to='/'>Home</Link>
         <Link to='/pro'>Product</Link>
         <Link to='/cour'>Course</Link>

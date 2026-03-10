@@ -1,27 +1,130 @@
-body{
+body {
   height: 100%;
   width: 100%;
-  background: #000;
-  color: aliceblue;
+
 }
-h1{
-  color: aqua;
+
+h1 {
+  /* color: aqua; */
   font-size: 100px;
   position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   text-decoration: underline darkcyan;
   white-space: nowrap;
-  
+
 }
-.abs{
+
+.abs {
   color: red;
   font-size: 100px;
   position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   white-space: nowrap;
   text-decoration: underline darkcyan;
+}
+
+.nlight {
+  background-color: cyan;
+  color: #000;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  transition: all 0.3s ease;
+  width: 100%;
+  gap: 0.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.flight {
+  background-color: cyan;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  transition: all 0.3s ease;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.ndark {
+  background-color: rgb(34, 119, 119);
+  color: azure;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  transition: all 0.3s ease;
+  width: 100%;
+  gap: 0.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.fdark {
+  background-color: rgb(34, 119, 119);
+  color: azure;
+ display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  transition: all 0.3s ease;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nalight {
+  color: azure;
+  background-color: #818cf8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+  transition: all 0.3s ease;
+  width: 100%;
+  gap: 0.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+  
+}
+
+.nadark {
+  background-color: rgb(80, 27, 129);
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+  transition: all 0.3s ease;
+  width: 100%;
+  gap: 0.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.hdark {
+  background-color: rgb(34, 34, 34);
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.hlight {
+  background-color: whitesmoke;
+  color: rgb(34, 34, 34);
+  min-height: 100vh;
+  transition: all 0.3s ease;
 }
