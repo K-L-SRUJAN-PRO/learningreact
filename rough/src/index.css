@@ -1,25 +1,29 @@
 *{
-  margin: 10;
+  margin: 0;
   padding: 0;
-  background-color: black;
-  color: aliceblue;
-  font-size: 40px;
+  background: black;
+  color: white;
 }
 
+body{
+  height: 100%;
+  width: 100%;
+}
 h1{
-  background-color: rgb(62, 62, 62);
-  min-width: 60px;
-  width: fit-content;
-  text-align: center;
+  font-size: 90px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform:translate(-50%,-50%) ;
 }
 
-button{
-  border: none;
-  font-size: 50px;
-  padding: 10px;
-  margin: 10px;
-  background-color: gray;
-  color: black;
-  border: none;
-  border-radius: 1rem ;
+.nav{
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  padding : 30px;
+}
+.navs{
+  display: flex;
+  gap: 30px;  
 }
